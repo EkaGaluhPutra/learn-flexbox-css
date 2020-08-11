@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    background-color: crimson;
+    color: wheat;
+}
+
+header {
+    background-color: coral;
+    padding: 5px 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.container {
+    border: 4px solid greenyellow; 
+    margin: 5px;
+    display: flex;
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+}
+
+.container > div:nth-child(1n) {
+    background-color: deeppink;
+}
+
+.container > div:nth-child(2n) {
+    background-color: blueviolet;
+}
+
+.container > div:nth-child(3n) {
+    background-color: cornflowerblue;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    background-color: teal;
+    padding: 10px;
+    margin: 5px;
+}

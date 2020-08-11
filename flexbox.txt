@@ -1,0 +1,13 @@
+flexbox adalah metode tata letak satu dimensi untuk meletakan item dalam baris dan kolom. flex-item nanti merujuk ke element yang ingin diletakan.
+
+untuk menggunakan flexbox ke element, masukan nilai display: flex. ke dalam induk elemet yang ingin menggunakan flexbox. contoh disini kita ingin article di letakan menggunakan flex dan element induknya section.
+
+alur flexbox bisa di lihat link di bawah ini.
+https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png
+
+main axis penataan layout baris dari kanan ke kiri.  main start adalah awal dari penataan layout dan main end adalah akhirnya.
+cros axis penataan layout kolom dari atas ke bawah.  cros start adalah awal daari penataan layout daan cros end adalah akhirnya.
+contoh tag section adalah induk dari article yang akan kita tampilkan menggunakan flexbox. dan section sebagai parent dan article sebagai child.
+
+bisa di lihat, hasil dari tampilannya article keluar dari flex-container dan tampilannya kurang menarik. untuk memperbaiki ini kita masukan code flex-wrap: wrap, kedalam css section dan flex: 250px ke dalam css article.
+penjelasan flex-wrap: jika ada element anak yang keluar dari element induk maka akan di overflow ke baris selanjutnya / ke bawah. dan flex di artile itu mengatur ukuran article itu sendiri. dan sisa 2 dibawah akan di wrap agar satu baris itu penuh.
